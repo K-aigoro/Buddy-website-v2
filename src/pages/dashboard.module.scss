@@ -1,0 +1,74 @@
+.dashboard {
+  display: grid;
+  grid-template-columns: 25rem auto;
+  // height: 100vh;
+
+  @media (max-width: 68em) {
+    display: block;
+    grid-template-columns: 10rem auto;
+    grid-template-columns: auto;
+    height: inherit;
+  }
+
+  &__sidenav {
+    .navbar {
+      position: relative;
+      z-index: 100;
+      // position: fixed;
+      height: 100%;
+
+      @media (max-width: 68em) {
+        position: fixed;
+      }
+    }
+
+    .toggle {
+      display: none;
+    }
+
+    @media (max-width: 68em) {
+      .hide {
+        transform: translateX(-120px);
+        transition: all 1s ease;
+      }
+
+      .show {
+        transform: translateX(0px);
+        transition: all 1s ease;
+      }
+
+      .toggle {
+        position: absolute;
+        top: 13px;
+        display: block;
+        left: 110px;
+      }
+
+      .toggle_position {
+        top: 10px;
+        left: 20px;
+      }
+    }
+  }
+
+  &__main {
+    padding-left: 3.2rem;
+    padding-right: 2.4rem;
+    background-color: #f5f5f5;
+
+    @media (max-width: 68em) {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+    .main__top_nav {
+    }
+
+    .main__content_area {
+      display: flex;
+
+      @media (max-width: 68em) {
+        flex-direction: column;
+      }
+    }
+  }
+}
