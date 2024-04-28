@@ -8,7 +8,7 @@ function Mail() {
       <div className="flex flex-col  m-auto bg-white items-center border border-solid border-gray-300 shadow-md rounded-lg p-20">
         <img src={Email} className="pb-7"/>
         <h1 className="font-bold text-2xl leading-9 text-center pb-4">
-          Email verified !
+          Email verified!
         </h1>
         <h2 className="font-medium text-[14px] leading-6 text-center tracking-tight pb-8 text-gray-600">
           The verified Email address will be associated with your account. Click
