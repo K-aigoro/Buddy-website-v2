@@ -1,9 +1,11 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
+
 
 function Otp() {
   const [otp, setOtp] = useState(new Array(4).fill(""));
-  const userid = "anyuser@Zojatech.com";
+  const userid = "seyi@Zojatech.com";
   const handleChange = (element, index) => {
     if (isNaN(element.value)) return false;
 
@@ -43,9 +45,11 @@ function Otp() {
             })}
           </div>
           <div className="">
+            <Link to='/verifyEmail'>
             <button className="mt-6 w-40 h-[40px] py-2 px-0 bg-orange-500 items-center text-gray-100 rounded-md cursor-pointer text-lg font-normal ">
               Confirm code
             </button>
+            </Link>
           </div>
 
           <div className="flex gap-2 py-1 mt-7 text-right max-md:mt-10">

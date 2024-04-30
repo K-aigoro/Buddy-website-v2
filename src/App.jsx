@@ -7,6 +7,7 @@ import Verify from "./pages/verify";
 import Otpload from "./pages/otp";
 import LoginPage from "./pages/loginPage";
 import Portfolio from "./pages/portfolio";
+import Checkedmail from "./pages/checkedMail";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/" element={<Signupscreen />} />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/register" element={<Signupactive />} />
+        <Route path="/checkMail" element={<Checkedmail />} />
         <Route path="/verifyEmail" element={<Verify />} />
         <Route path="/otp" element={<Otpload />} />
         <Route path="/login" element={<LoginPage />} />

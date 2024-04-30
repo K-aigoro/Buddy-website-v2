@@ -79,10 +79,10 @@ function Signup() {
                 </div>
               </div>
               <div className="">
-                <Link to="/verifyEmail">
+                <Link to="/checkMail">
                   <button
                     type="submit"
-                    className="mt-[1rem] w-[100%] h-[2.5rem] py-[.4rem] px-[0] border border-gray-200 rounded-lg text-gray-400 cursor-pointer transition duration-300 ease-in-out  focus:bg-orange-500 focus:text-white transform focus:-skew-x-60 focus:border-transparent hover:bg-orange-500 hover:text-white hover:transform hover:-skew-x-60 hover:border-transparent"
+                    className="mt-[1rem] w-[100%] h-[2.5rem] py-[.4rem] px-[0] border border-gray-200 bg-gray-100 rounded-lg text-gray-400 cursor-pointer transition duration-300 ease-in-out  focus:bg-orange-500 focus:text-white transform focus:-skew-x-60 focus:border-transparent hover:bg-orange-500 hover:text-white hover:transform hover:-skew-x-60 hover:border-transparent"
                   >
                     Create account
                   </button>

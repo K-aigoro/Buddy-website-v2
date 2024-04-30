@@ -6,7 +6,8 @@ import { FiBell } from "react-icons/fi";
 
 function TopNavbar() {
   return (
-    <div className="flex md:flex-row bg-gray-200 pt-[2.4rem] pb-[3.2rem] justify-between items-center">
+    <div className="">
+    <div className="flex md:flex-row bg-gray-200 py-[1.4rem] ml-[250px] justify-between items-center">
       <h1 className="mx-auto font-bold text-[25px] leading-[133%] text-start text-gray-700 ">
         My Portfolio
       </h1>
@@ -24,6 +25,7 @@ function TopNavbar() {
         <FiBell size={14} />
         </div>
       </div>
+    </div>
     </div>
   );
 }
