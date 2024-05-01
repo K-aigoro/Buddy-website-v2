@@ -80,7 +80,7 @@ function Sidebar() {
               <center>
                 <button className="py-2 gap-2 bg-orange-200 border-none rounded-lg flex justify-center items-center p-4 gap-x-4">
                   <img src={Logout} alt="alt" />
-                  <p className="text-sm  font-[400] text-orange-400">Logout</p>
+                  <p className="text-sm font-[400] text-orange-400">Logout</p>
                 </button>
               </center>
             </div>

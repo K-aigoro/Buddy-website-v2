@@ -1,0 +1,154 @@
+.side_nav{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 100;
+    height: 100%;
+
+}
+
+.buddylogo {
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 2rem;
+}
+
+
+.nav {
+    width: calc(100% - 5rem);
+    display: flex;
+    justify-content: center;
+    margin: 0 1.5rem;
+}
+
+.nav1 li {
+    margin-bottom: 2rem;
+    padding: 1.8rem 3.3rem;
+    list-style-type: none;
+    display: flex;
+    column-gap: 0.9rem;
+    align-items: center;
+
+}
+
+.active li {
+    background: #ffffff;
+    box-shadow: 0px 4px 58px rgba(0, 0, 0, 0.07);
+    border-radius: 16px;
+}
+
+.active li::before {
+    content: "";
+    height: 3rem;
+    width: 7px;
+    left: 0;
+    background-color: #ff8600;
+    position: absolute;
+    color: #14142b;
+    border-radius: 0px 4px 4px 0px;
+}
+
+
+p {
+    color: #818187;
+}
+
+.side_footer {
+    background-color: white;
+    display: flex;
+    margin: 2.4rem;
+    position: relative;
+    justify-content: center;
+    padding: 1.6rem;
+    box-shadow: 0px 11px 56px rgba(0, 0, 0, 0.07);
+    margin-bottom: 3.2rem;
+    border-radius: 16px;
+}
+
+.footer_wrapper {
+    display: grid;
+    justify-content: center;
+}
+
+.footer_wrapper>h3 {
+    color: black;
+    font-weight: 500;
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-align: center;
+}
+
+.footer_wrapper>p {
+    text-align: center;
+    color: grey;
+    margin-top: 0.25rem;
+    padding-bottom: 1.2rem;
+}
+
+.footer_btn {
+    background-color: rgba(255, 134, 0, 0.16);
+    border: none;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 3rem;
+    column-gap: 0.7rem;
+}
+.footer_btn p{
+    color: #ff8600;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 2.4rem;
+}
+
+@media (max-width: 68em) {
+    .side {
+        position: fixed;
+        z-index: 100;
+        background-color: #fff;
+    }
+
+    img {
+        width: 5rem;
+    }
+
+    .navlinks {
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    p, a {
+        display: none;
+    }
+
+    .footer_wrapper {
+        box-shadow: none;
+        margin: 0;
+        position: absolute;
+
+    }
+
+    .footer_wrapper img {
+        row-gap: 1rem;
+        width: 70%;
+    }
+
+    .footer_wrapper>h3 {
+        display: none;
+    }
+
+    .footer_wrapper>p {
+        display: none;
+    }
+
+    .footer_btn {
+        padding: 1rem;
+    }
+
+}
