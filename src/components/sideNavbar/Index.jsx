@@ -12,6 +12,7 @@ import Analytics from "../../assets/image/Vector (2).svg";
 import Packs from "../../assets/image/dollar coin.svg";
 import Logout from "../../assets/image/logout.svg";
 import Setting from "../../assets/image/Setting.svg";
+import './side.css'
 
 function Sidebar() {
   // const [active, setActive] = useState(false);
@@ -20,67 +21,67 @@ function Sidebar() {
 
   console.log(url);
   return (
-    <div className=" fixed bg-white md:flex md:flex-col md:justify-between md:h-[100%] ">
+    <div className="side_nav">
       <div className="">
-        <div className="justify-center items-center mt-8">
+        <div className="buddylogo">
           <center>
             {" "}
             <img src={Logo} alt="logo"  className=""/>{" "}
           </center>
         </div>
-        <div className="flex justify-center mt-[2rem]">
-          <nav className="w-full md:w-auto flex justify-center">
-            <ul className="text-gray-500">
+        <div className="navlinks mt-7">
+          <nav className="nav">
+            <ul className="nav1">
               <NavLink
-                to="/dashboard"
-                className={url == "/dashboard" ? `bg-white rounded-2xl shadow-[0px_4px_58px_rgba(0, 0, 0, 0.07)` : ""}
+                to="/portfolio"
+                className={url === "/dashboard" ? "active" : ""}
               >
-                <li className="py-2 flex gap-2 items-center">
+                <li>
                   <img src={User} alt="my portfolio" />
-                  <p className="text-base"> My Portfolio</p>
+                  <p> My Portfolio</p>
                 </li>
               </NavLink>
               <NavLink
                 to="mygroup"
-                className={(navData) => (navData.isActive ? `` : "")}
+                className={(navData) => (navData.isActive ? `active` : "")}
               >
-                <li className="py-2 flex gap-2 items-center">
+                <li>
                   <img src={Group} alt="my group" />
-                  <p className="text-base"> My Group</p>
+                  <p> My Group</p>
                 </li>
               </NavLink>
               <NavLink
                 to="analytics"
-                className={(navData) => (navData.isActive ? `` : "")}
+                className={(navData) => (navData.isActive ? `active` : "")}
               >
-                <li className="py-2 flex gap-2 items-center">
+                <li>
                   <img src={Message} alt="analytics" />
-                  <p className="text-base"> My Analytics</p>
+                  <p> My Analytics</p>
                 </li>
               </NavLink>
               <NavLink
                 to="analytics"
-                className={(navData) => (navData.isActive ? `` : "")}
+                className={(navData) => (navData.isActive ? `active` : "")}
               >
-                <li className="py-2 flex gap-2 items-center">
+                <li>
                   <img src={Analytics} alt="analytics" />
                   <p className="text-base"> My Analytics</p>
                 </li>
               </NavLink>
               <NavLink
                 to="pack"
-                className={(navData) => (navData.isActive ? `` : "")}
+                className={(navData) => (navData.isActive ? `active` : "")}
               >
-                <li className="py-2 flex gap-2 items-center">
+                <li>
                   <img src={Packs} alt="pack" />
                   <p className="text-base"> Pack</p>
                 </li>
               </NavLink>
               <NavLink
                 to="settings"
-                className={(navData) => (navData.isActive ? `` : "")}
+                className={(navData) => (navData.isActive ? "active" : "")}
               >
-                <li className="py-2 flex gap-2 items-center">
+                <li>
                   <img src={Setting} alt="settings" />
                   <p> Settings</p>
                 </li>
@@ -90,7 +91,6 @@ function Sidebar() {
         </div>
         <Outlet />
       </div>
-      <footer>
         <div className="bg-white flex m-6 relative justify-center p-4 shadow-lg mb-8 rounded-[16px]">
           <div className="md:grid md:justify-center">
             <center>
@@ -107,7 +107,6 @@ function Sidebar() {
             </center>
           </div>
         </div>
-      </footer>
     </div>
   );
 }
