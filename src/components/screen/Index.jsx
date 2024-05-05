@@ -18,16 +18,15 @@ function Register() {
                 <IoMail className="shrink-0 w-6 text-black size-5" />
                 <div>Sign up with email</div>
               </div>
-              </Link>
-        
+            </Link>
           </div>
           <div className="flex gap-4 items-center mt-3 text-sm tracking-normal leading-5 text-gray-500 whitespace-nowrap">
             <hr className="my-auto max-w-full border border-solid aspect-[100] border-zinc-200  w-[172px]" />
             <div className="self-stretch">or</div>
-            <hr className=" my-auto max-w-full border border-solid aspect-[100] border-zinc-200 w-[172px]" />
+            <hr className="my-auto max-w-full border border-solid aspect-[100] border-zinc-200 w-[200px]" />
           </div>
           <div className="flex flex-col justify-center items-start px-16 py-2 mt-3 tracking-normal text-gray-500 rounded-md border border-solid border-zinc-200 max-md:px-5">
-            <div className="flex gap-2 px-4 ml-7 md:ml-2.5">
+            <div className="flex items-center gap-2 px-4 ml-8  max-md:ml-2.5">
               <img src={Google} />
               <div>Sign up with Google</div>
             </div>

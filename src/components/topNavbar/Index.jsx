@@ -1,33 +1,28 @@
-// eslint-disable-next-line no-unused-vars
-import React from "react";
+import styles from "./nav.module.scss";
 import { RiSearchLine } from "react-icons/ri";
 import { HiOutlinePlus } from "react-icons/hi";
 import { FiBell } from "react-icons/fi";
-import "./nav.css";
 
-function TopNavbar() {
+function TopNav(){
   return (
-    <div className="top_nav">
-      <h1 className="title">
-        My Portfolio
-      </h1>
-      <div className="top_container">
-        <div className="search">
-          <RiSearchLine size={18} className="icon" />
-          <div className="">
-            <input type="text" placeholder="Search" className="input"/>
+    <div className={styles.dashboardtopnav}>
+      <h1>My Portfolio</h1>
+      <div className={styles.dashboardtopnav__right}>
+        <div className={styles.search}>
+          <div className={styles.searchicon}>
+            <RiSearchLine size={18} />
           </div>
+          <input type="text" placeholder="Search" />
         </div>
-        <div className="p-[12px]  flex mt-1 items-center bg-white rounded-[50px]">
-        <HiOutlinePlus size={14} />
+        <div className={styles.plus}>
+          <HiOutlinePlus size={14} />
         </div>
-        <div className="p-[12px] flex mt-1 items-center bg-white rounded-[50px]">
-        <FiBell size={14} />
+        <div className={styles.bell}>
+          <FiBell size={14} />
         </div>
       </div>
     </div>
-    
   );
 }
 
-export default TopNavbar;
+export default TopNav;

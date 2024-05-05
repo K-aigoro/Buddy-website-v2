@@ -1,0 +1,53 @@
+.trending {
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 2.4rem;
+    margin-bottom: 1.6rem;
+}
+
+.post_cards {
+    display: flex;
+    column-gap: 1.6rem;
+}
+
+.post_card {
+    border: 1px solid #f1f1f1;
+    border-radius: 12px;
+    padding: 1.6rem;
+}
+
+.post_card_h3 {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 140%;
+    color: #3b3b45;
+}
+
+.post_card_p {
+    /* font-weight: 300;
+    font-size: 1.4rem; */
+    line-height: 150%;
+    color: #818187;
+}
+
+.reactions {
+    display: flex;
+    column-gap: 1.2rem;
+}
+
+.reactions_love{
+    padding: 0.4rem 1rem;
+    background: #f6f6f6;
+    display: flex;
+    align-items: center;
+    column-gap: 0.9rem;
+    justify-content: space-around;
+    border-radius: 17px;
+}
+
+@media (max-width: 40.25em) {
+    .post_cards {
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+}

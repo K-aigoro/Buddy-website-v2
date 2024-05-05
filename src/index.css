@@ -12,14 +12,13 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
-html {
+/* html {
   font-size: 82.5%;
   color: var(--text-color-1);
 
@@ -38,6 +37,6 @@ html {
   @media (max-width: 26.43em) {
     font-size: 36.25%;
   }
-}
+} */
 
 
