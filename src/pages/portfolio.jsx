@@ -3,6 +3,8 @@ import { MdMenuOpen } from "react-icons/md";
 import Sidebar from "../components/sideNavbar/Index";
 import styles from "./style/style.module.scss";
 import TopNav from "../components/topNavbar/Index";
+import Main from "../components/dashboardMain/main";
+import SidebarRight from "../components/RightSidebar/Sidebar";
 
 function Portfolio() {
   const [toggle, setToggle] = useState(true);
@@ -34,6 +36,9 @@ function Portfolio() {
           <TopNav />
         </div>
         <div className={styles.main__content_area}>
+          <Main />
+          <SidebarRight />
+          {/* <div>school</div> */}
           {/* <DashboardMain /> */}
           {/* <RightSideBar /> */}
         </div>

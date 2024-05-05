@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState } from "react";
-import Logo from "../banner/logo";
+import Logo from "../../assets/image/Group 37619.png";
 import { Link } from "react-router-dom";
 import User from "../../assets/image/user.svg";
 import Group from "../../assets/image/Vector (1).svg";
@@ -18,10 +18,13 @@ function Sidebar() {
   // console.log(url);
   return (
 
-    <div className="flex flex-col h-full grow items-center px-16 pt-5 pb-20 text-lg leading-6 text-gray-500 bg-white max-md:px-5 max-md:max-w-full">
+    <div className="flex flex-col mt-5 justify-between">
       <div className="">
-        <div className="">
-          <Logo />
+      <div className="">
+          <center>
+            {" "}
+            <img src={Logo} alt="logo" />{" "}
+          </center>
         </div>
         <div className="flex justify-center mt-[2rem] ">
           <nav className="w-full md:w-auto flex justify-center">
@@ -66,7 +69,7 @@ function Sidebar() {
           </nav>
         </div>
       </div>
-      <footer>
+      <div>
         <div className='bg-white flex m-6 justify-center p-4 shadow-lg mb-8 rounded-xl"'>
           <div className="grid justify-center m-0  mt-absolute ">
             <center>
@@ -86,7 +89,7 @@ function Sidebar() {
             </div>
           </div>
         </div>
-      </footer>
+      </div>
     </div>
   );
 }
